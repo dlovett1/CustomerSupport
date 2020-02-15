@@ -38,6 +38,7 @@ public class TicketController {
     public String showStoreTicket(Model model) {
         model.addAttribute("ticket", new TicketEntity());
         return "tickets/storeTicket";
+      
     }
 
     @RequestMapping(value = "/tickets/storeTickets", method = RequestMethod.POST)
